@@ -1,55 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heitor</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Full Stack Developer Portfolio of Heitor Santos" />
+  <meta name="author" content="Heitor Santos" />
+  <title>Heitor Santos | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Heitor Santos</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                 <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about" class="about">
-        <h2>About me</h2>
-        <p>I'm a full-stack student and I enjoy creating modern and functional interfaces.</p>
-        <div class="cards">
-            <div class="card">
-                <h3>Front-End</h3>
-                <p>HTML, CSS, JavaScript, and React to build amazing interfaces.</p>
-            </div>
-            <div class="card">
-                <h3>Back-end</h3>
-                <p>Node.js, Express, PostgreSQL, and REST APIs for complete systems.</p>
-            </div>
-            <div class="card">
-                <h3>Full Stack</h3>
-                <p>Front-end and back-end integration, project deployment and maintenance.</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CONTACT SECTION -->
-     <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="E-mail" required>
-            <textarea placeholder="Message" required></textarea>
-            <button>Send</button>
-        </form>
-     </section>
+  <!-- HEADER -->
+ <header>
+  <nav>
+    <h1>Heitor Santos</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Botão de Dark Mode -->
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
+</header>
 
-       <!-- FOOTER -->
-     <footer>
-        © 2025 Heitor Santos | Full Stack Developer
-     </footer>
-    <script src="script.js"></script>
-    </body>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm a full-stack developer passionate about building modern and functional interfaces.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Front-End</h3>
+        <p>HTML, CSS, JavaScript, and React for creating beautiful user interfaces.</p>
+      </div>
+      <div class="card">
+        <h3>Back-End</h3>
+        <p>Node.js, Express, and PostgreSQL for building scalable, secure APIs.</p>
+      </div>
+      <div class="card">
+        <h3>Full Stack</h3>
+        <p>Connecting front-end and back-end, deploying, and maintaining web applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION (dinâmica) -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <!-- Cards serão adicionados dinamicamente pelo JS -->
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" name="name" autocomplete="name" required aria-label="Name" />
+      <input type="email" placeholder="Email" name="email" autocomplete="email" required aria-label="Email" />
+      <textarea placeholder="Message" name="message" rows="5" required aria-label="Message"></textarea>
+      <button type="submit">Send</button>
+      <p id="form-status"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Heitor Santos | Full Stack Developer
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
